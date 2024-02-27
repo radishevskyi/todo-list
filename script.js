@@ -6,11 +6,9 @@ const list = document.querySelector(".todo-list");
 button.addEventListener("click", () => {
   const li = document.createElement("li");
   li.className = "todo-list-item";
-//   const task = document.createElement("input");
-//   task.type = "text"
   const removeBtn = document.createElement("button");
   removeBtn.innerText = "Remove";
-  li.innerHTML = `<input type = "checkbox"/> ${input.value}`;
+  li.innerHTML = `<input class="input-checkbox" type = "checkbox"/> <input class="input-value" value = "${input.value}" type = "text"/>`;
   list.appendChild(li);
   li.appendChild(removeBtn);
   input.value = '';
