@@ -106,3 +106,8 @@ body {
 .todo-list-item button:hover {
     box-shadow: 0px 0px 10px red;
 }
+
+.line-through {
+    text-decoration: line-through;
+    text-decoration-color: black;
+  }
